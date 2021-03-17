@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flexbox</title>
+    <style>
+        .flex-container{
+            display: flex;
+            justify-content: space-around; /* LEFT TO RIGHT = JUSTIFY-CONTENT */
+            align-items: center;           /* TOP TO BOTTOM = ALIGN-ITEMS */
+
+            text-align: center;
+            height: 70vh;
+            background-color: lightsalmon;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+        .flex-item-1{
+            flex-grow: 1;
+            background-color: lightgreen;
+            margin: 0 5px;
+        }
+        .flex-item-2{
+            flex-grow: 2;
+            background-color: lightgrey;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <section id="product-information">
+        <div class="flex-container">
+            <div class="flex-item-1">
+                Hello, left side
+            </div>
+            <div class="flex-item-2">
+                Hello, middle side
+            </div>
+            <div class="flex-item-1">
+                Hello, right side
+            </div>
+        </div>
+    </section>
+</body>
+</html> 

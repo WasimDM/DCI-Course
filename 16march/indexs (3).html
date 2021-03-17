@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Task 2</title>
+    <style>
+        .first-div{
+            font-size: 34px;
+            font-family: Cambria, Arial, sans-serif;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+        .first-p{
+            text-decoration: underline;
+            font-size: 28px;
+            letter-spacing: 5px;
+        }
+        button{
+            color: white;
+            background-color: gray;
+            border: 3px solid darkgray;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 28px;
+        }
+        button:hover{
+            background-color: lightgray;
+            padding: 15px;
+            width: 200px;
+            height:auto;
+        }
+        nav{
+            margin-top: 25px;
+        }
+        nav ul{
+            list-style-type: none;
+            width: 20%;
+            height: auto;
+            margin: 20px auto;
+        }
+        nav .main-ul li, nav .footer-ul li{
+            display:inline-block;
+            margin: 0 10px;
+        }
+        nav .main-ul li a{
+            text-decoration: none;
+            color:white;
+            background-color: gray;
+            border: 3px solid darkgray;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        nav .main-ul li a:hover{
+            background-color: lightgray;
+        }
+        nav .footer-ul li a {
+            text-decoration: none;
+            color:green;
+            background-color: darkgreen;
+            border: 3px solid lightgreen;
+            padding: 5px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 30%;
+            height:auto;
+            text-align: center;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 3px solid black;
+        }
+        th{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="first-div">This is the first div</div>
+    <br>
+    <p class="first-p">This is the first paragraph</p>
+    <br>
+    <div id="button-section">
+        <div class="button-class">
+            <button class="click-button">Click me!</button>
+        </div>
+    </div>
+    <br>
+    <nav>
+        <ul class="main-ul">
+            <li>
+                <a href="http://www.google.com">First</a>
+            </li>
+            <li>
+                <a href="http://www.google.com">Second</a>
+            </li>
+            <li>
+                <a href="http://www.google.com">Third</a>
+            </li>
+            <li>
+                <a href="http://www.google.com">Last</a>
+            </li>
+        </ul>
+    </nav>
+    <p>Footer</p>
+    <nav>
+        <ul class="footer-ul">
+            <li>
+                <a href="http://www.google.com">First</a>
+            </li>
+            <li>
+                <a href="http://www.google.com">Second</a>
+            </li>
+            <li>
+                <a href="http://www.google.com">Third</a>
+            </li>
+            <li>
+                <a href="http://www.google.com">Last</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <table>
+        <tr>
+            <th>One</th>
+            <th>Two</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>2.</td>
+        </tr>
+    </table>
+</body>
+</html>

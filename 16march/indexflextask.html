@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Flextask</title>
+    <style>
+        .first-container{
+            display: flex;
+        }
+        .flex-item-1{
+            flex-grow: 1;
+            text-align: center;
+            background-color: lightgray;
+            margin: 5px;
+        }
+        .flex-item-2{
+            flex-grow: 2;
+            align-items: center;
+            text-align: center;
+            background: red;
+            margin: 5px;
+        }
+        .second-container{
+            display: flex;
+        }
+        .flex-item-3{
+            margin:  5px;
+            flex: 1;
+            text-align-last: center;
+            background-color: lightblue;
+        }
+       .third-container{
+        display: flex; 
+       }
+       .flex-item-4{
+            flex-grow: 1;
+            background: lightgrey;
+            align-content: center;
+            justify-content: center;
+            padding: 40px;
+            margin-right: 50%;
+        }
+
+        .flex-item-5{
+            display:flex;
+            text-align: center;
+            background-color: lightgray;
+            align-content: center;
+            justify-content: center;
+            padding: 5px 50px;
+            align-items: center;
+            margin: 5px;
+        }
+        
+        
+        button{
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            border-radius: 1em;
+        }
+        img{
+            border: 15px solid aqua;  
+        }
+
+        @media (max-width: 1080px){
+            .first-container .second-container .third-container{
+                background-color: black;
+                display: flex;
+                align-content: center;
+            }
+        }
+        @media (max: width 250px){
+            #main-information #sub-info{
+                background-color: blueviolet;
+                display: flex;
+                align-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="main-information"> 
+        <div class="first-container">
+            <div class="flex-item-1">Right product </div>
+            <div class="flex-item-2"> Middle product </div>
+            <div class="flex-item-1">left product </div>
+
+        </div>
+        <div class="second-container">
+            <div class="flex-item-3">left product </div>
+            <div class="flex-item-3">right product </div>
+        </div>
+
+    </section>
+    <section id="sub-info">
+        <div class="third-contatainer">
+            <div class="flex-item-4">
+                <div class="flex-item-6">
+                    <img src="Haribo.jpg" alt="Haribo">
+                </div>
+                <div class="infomation">
+                    <button>
+                    information
+                    </button>
+                </div>
+            </div>
+            <div class="flex-item-5">
+                 <p>Element</p>
+            </div>
+        </div>
+    </section>
+    
+
+    
+</body>
+</html>
